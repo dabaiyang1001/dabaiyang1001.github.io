@@ -1,1 +1,28 @@
-hello world!
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, minimal-ui" />
+		<title>价差数据</title>
+		<meta name="keywords" content="价差数据">
+		<meta name="description" content="价差数据">
+		<script type="text/javascript" src="http://hq.sinajs.cn/list=hf_AGTD" charset="gb2312"></script>
+<script type="text/javascript" src="http://hq.sinajs.cn/list=AG0" charset="gb2312"></script>
+<script type="text/javascript">
+var AG0 = hq_str_AG0.split(",");
+document.write("期货最新价:"+AG0[8]+"<br/>");
+
+var AGTD=hq_str_hf_AGTD.split(",");
+document.write("现货最新价:"+AGTD[2]+"<br/>");
+document.write("价  差:"+(AG0[8]-AGTD[2])+"<br/>");
+document.write("当前交易时间:"+AGTD[12]+" "+AGTD[6]);
+</script>
+	</head>
+
+	<body>
+		
+		
+	</body>
+
+</html>
