@@ -11,12 +11,12 @@
 <script type="text/javascript" src="https://hq.sinajs.cn/list=AG0" charset="gb2312"></script>
 		<script type="text/javascript" src="https://hq.sinajs.cn/list=AG1906" charset="gb2312"></script>
 <script type="text/javascript">
-	var AGTD=hq_str_hf_AGTD.split(",");
-	document.write("现货最新价:"+AGTD[2]+"<br/>");
 	var AG0 = hq_str_AG0.split(",");
 	document.write("期货最新价:"+AG0[8]+"<br/>");
 	var AG1906 = hq_str_AG1906.split(",");
 	document.write("期货1906最新价:"+AG1906[8]+"<br/>");
+	var AGTD=hq_str_hf_AGTD.split(",");
+	document.write("现货最新价:"+AGTD[2]+"<br/>");
 
 	document.write("价  差:"+(AG0[8]-AGTD[2])+"<br/>");
 	document.write("1906价  差:"+(AG1906[8]-AGTD[2])+"<br/>");
